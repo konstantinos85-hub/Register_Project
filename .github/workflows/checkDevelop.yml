@@ -28,7 +28,7 @@ jobs:
 
       - name: Upload test reports
         if: always() && steps.unit-tests.outcome == 'success'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-reports
           path: '**/target/surefire-reports/*.xml'
@@ -39,7 +39,7 @@ jobs:
 
       - name: Upload integration test reports
         if: always() && steps.integration-tests.outcome == 'success'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: integration-test-reports
           path: '**/target/failsafe-reports/*.xml'
