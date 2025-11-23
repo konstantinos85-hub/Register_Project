@@ -6,11 +6,13 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.5.7</version>
+		<packaging>pom</packaging>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>city.register</groupId>
 	<artifactId>regi-spirng</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
 	<name>regi-spirng</name>
 	<description>city_register</description>
 	<url/>
