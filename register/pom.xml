@@ -9,10 +9,10 @@
 	<version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <artifactId>register-model-spring</artifactId>
+  <artifactId>register-model-sprign</artifactId>
 
   <name>register</name>
-  <description>Register Domain Model</description>
+  <description>Register domain model</description>
   
   <dependencies>
   	<dependency>
