@@ -6,15 +6,13 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.5.7</version>
-		<packaging>pom</packaging>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>city.register</groupId>
-	<artifactId>regi-spirng</artifactId>
+	<groupId>regi-spirng</groupId>
+	<artifactId>register-client-spirng</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
-	<name>regi-spirng</name>
-	<description>city_register</description>
+	<name>register-client-spirng</name>
+	<description>register Project</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -31,27 +29,10 @@
 	<properties>
 		<java.version>21</java.version>
 	</properties>
-	<modules>
-		<module> regi-spirng </module>
-		<module> register-client-spirng </module>
-		<module> register-spirng </module>
-	
-	</modules>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-			<version>2.2.0</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>com.fasterxml.jackson.dataformat</groupId>
-			<artifactId>jackson-dataformat-xml</artifactId>
 		</dependency>
 
 		<dependency>
@@ -59,7 +40,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
 	</dependencies>
 
 	<build>
@@ -67,39 +47,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>pre-intergration-test</id>
-						<goals>
-							<goal>start</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>post-intergration-test</id>
-						<goals>
-							<goal>stop</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-failsafe-plugin</artifactId>
-				<version>3.5.4</version>
-				<executions>
-					<execution>
-						<id>perfom-it</id>
-						<goals>
-							<goal>integration-test</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>verify-it</id>
-						<goals>
-							<goal>verify</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
