@@ -78,7 +78,7 @@ jobs:
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: Register-Project1/target/Register-Project1-0.1.jar
+          asset_path: Register-Project1/target/Register-Project1-0.1.pom
           asset_name: Register-Project1-0.1.jar
           asset_content_type: application/java-archive
         env:
